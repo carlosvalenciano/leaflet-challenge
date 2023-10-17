@@ -77,7 +77,7 @@ legend.onAdd = function() {
 
     //Go through each magnitude item to label and color the legend
     // push to labels arrays as list item
-    for (var i = 0; i < grades.length; i++) {
+    for (let i = 0; i < grades.length; i++) {
         labels.push('<ul style="background-color:' + chooseColor(grades[i] + 1) + '"> <span>' + grades[i] + (grades[i + 1] ? '&ndash;' + grades[i + 1] + '' : '+') + '</span></ul>');
       }
 
